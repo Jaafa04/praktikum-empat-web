@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Praktikum 4 (Kurs Mata Uang)</title>
+</head>
+<body>
+<br><br><br>
+<h1 align="center">Praktikum 4 (Kurs Mata Uang)</h1><hr><br>
+
+<table border="1" class="border border-success" align="center" width="750" height="300">
+	<tr>
+	<td align="center"> Mata Uang Asal<br><br>
+		<div class="container">
+		<form id="formasal" name="formasal" onsubmit="return false">
+
+			<select id="kategori" class="form-control" >
+				<option value="negara2">Malaysia-Ringgit</option>
+				<option value="negara3">Amerika-Dollar US</option>
+				<option value="negara4">Singapura-Dollar Singapore</option>
+				<option value="negara5">Jepang-Yen</option>
+				<option value="negara6">Eropa-Euro</option>
+				<option value="negara7">Arab Saudi-Riyal</option>
+			</select>
+
+		</form>
+
+		<br><input id="data1" class="form-control" type="text" placeholder="" name=""><br>
+
+			<input type="button" class="btn btn-success" onclick="hitung()" name="" value="Hitung">
+
+	</td>
+
+	<td align="center"> Mata Uang Tujuan<br><br>
+		<div class="container">
+		<form id="formjadi" name="formjadi" onsubmit="return false">
+			<select id="kategori1" class="form-control">
+				<option value="negara1">Indonesia-Rupiah</option>
+			</select>
+		</form>
+		<br>
+		<p id="konversi"></p>
+		
+	</td>
+
+	</tr>
+</table>
+
+<script type="text/javascript">
+
+	function hitung() {
+		
+		var mata_uang = document.getElementById('formasal').kategori.value;
+		var tukar_uang = document.getElementById('formjadi').kategori1.value;
+		var masukan = parseFloat(data1.value);
+
+		if (mata_uang == "negara2" && tukar_uang == "negara1") {
+
+				var hasil = masukan * 3500 ;
+
+				document.getElementById("konversi").innerHTML = hasil;
+
+		} else if (mata_uang == "negara3" && tukar_uang == "negara1") {
+
+			hasil = masukan * 14000;
+
+			document.getElementById("konversi").innerHTML = hasil;
+		}else if (mata_uang == "negara4" && tukar_uang == "negara1") {
+
+			hasil = masukan * 10500;
+
+			document.getElementById("konversi").innerHTML = hasil;
+		}else if (mata_uang == "negara5" && tukar_uang == "negara1") {
+			
+			hasil = masukan * 150;
+
+			document.getElementById("konversi").innerHTML = hasil; 
+
+		} else if (mata_uang == "negara6" && tukar_uang == "negara3") {
+
+			hasil = masukan * 17000;
+
+			document.getElementById("konversi").innerHTML = hasil;
+			
+		} else if (mata_uang == "negara7" && tukar_uang == "negara2") {
+
+			hasil = masukan * 4000;
+
+			document.getElementById("konversi	").innerHTML = hasil;
+		} 
+
+	}
+
+
+</script>
+
+
+<br>
+<p align="center"><blockquote>Data Kurs Mata Uang Bedasarkan Google Per @ 18-11-2020</blockquote></p>
+</body>
+</html>

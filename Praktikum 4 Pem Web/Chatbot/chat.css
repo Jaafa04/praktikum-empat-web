@@ -1,0 +1,17 @@
+body {
+    background:grey;
+}
+
+
+.tempatchat {
+    text-align: center;
+    background: white;
+    background: -moz-linear-gradient(center top , #00DD88 0%, #00CC00 100%) repeat scroll 0 0 transparent;
+    border-radius: 30px 30px 30px 30px;
+    width: 300px;
+    margin: 5px 0 10px 15px;
+    position: absolute;
+    margin-top: 480px;
+    margin-left:1200px;
+    z-index: 100;
+}
